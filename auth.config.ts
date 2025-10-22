@@ -2,6 +2,8 @@ import type { NextAuthConfig } from "next-auth";
 // this file used to configure the authentication process
 // flow: user logs in -> redirects to dashboard -
 // user logs out -> redirects to login page
+// this file decide on which pages to protect by returning a boolean value.
+// if true, the page is protected and the user will be redirected to the login page.
 export const authConfig = {
   pages: {
     signIn: "/login",
