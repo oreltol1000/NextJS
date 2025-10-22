@@ -2,6 +2,16 @@
 const shimmer =
   "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
 
+export function InvoicesSkeleton() {
+  return (
+    <div className="flex flex-row items-center justify-between border-b border-gray-100 py-4">
+      <div className="flex items-center">
+        creating....
+        <div className="mr-2 h-8 w-8 rounded-full bg-gray-200" />
+      </div>
+    </div>
+  );
+}
 export function CardSkeleton() {
   return (
     <div
